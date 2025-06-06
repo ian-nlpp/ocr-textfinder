@@ -5,36 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Finder - Find Text in Any Image</title>
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Custom Favicon (replace with your app_icon.ico or .png) -->
     <link rel="icon" type="image/x-icon" href="assets/app_icon.ico">
 
     <style>
-        /* Use the Inter font family defined in the <link> tag */
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Style for the subtle gradient background in dark mode */
         .gradient-bg {
-            background-color: #0f172a; /* dark blue fallback */
+            background-color: #0f172a;
             background-image: radial-gradient(circle at top left, #1e3a8a, transparent 40%), radial-gradient(circle at bottom right, #065f46, transparent 40%);
         }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-200">
 
-    <!-- Header -->
     <header class="py-4 px-6 md:px-8 lg:px-12 border-b border-slate-800">
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="flex items-center gap-3">
-                <!-- App Icon Placeholder -->
                 <img src="./assets/app_icon.ico" alt="Text Finder Icon" class="h-10 w-10 rounded-lg">
                 <span class="text-2xl font-bold text-white">Text Finder</span>
             </a>
@@ -44,29 +37,23 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
         <section class="gradient-bg py-20 px-6">
             <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
-                <!-- Left Column: Text and CTA -->
                 <div class="text-center md:text-left">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">Find Any Text, In Any Image. Instantly.</h1>
                     <p class="text-lg text-slate-300 mb-8 max-w-xl mx-auto md:mx-0">
                         Stop manually searching through screenshots and photos. Text Finder uses powerful OCR technology to scan your image folders and build a searchable database, letting you find what you need in seconds.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <!-- IMPORTANT: Replace '#' with the actual link to your 'Text-Finder-v1.0-setup.exe' file -->
-                        <a href="./Text-Finder-v1.0-setup.exe" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg transform hover:-translate-y-1 transition-all duration-300 ease-in-out inline-flex items-center justify-center gap-3">
+                        <a href="https://github.com/ian-nlpp/ocr-textfinder/releases/download/Initial/Text-Finder-v1.0-setup.exe" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg transform hover:-translate-y-1 transition-all duration-300 ease-in-out inline-flex items-center justify-center gap-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                             Download for Windows
                         </a>
                     </div>
                      <p class="text-sm text-slate-400 mt-4">Free to use, v1.0</p>
                 </div>
-                <!-- Right Column: App Screenshot -->
                 <div>
-                    <!-- Placeholder for your app screenshot. Replace the src with an image of your app -->
                     <img src="./assets/screenshot.png" 
                          alt="Screenshot of Text Finder application"
                          class="rounded-xl shadow-2xl ring-1 ring-slate-900/10"
@@ -75,7 +62,6 @@
             </div>
         </section>
 
-        <!-- Features Section -->
         <section id="features" class="py-24 px-6 bg-slate-950">
             <div class="container mx-auto">
                 <div class="text-center mb-16">
@@ -83,7 +69,6 @@
                     <p class="text-lg text-slate-300 max-w-2xl mx-auto">Text Finder is packed with features to make finding information effortless.</p>
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Feature 1: Powerful OCR -->
                     <div class="bg-slate-800/50 p-8 rounded-xl shadow-md">
                         <div class="bg-blue-900/50 text-blue-300 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
@@ -91,7 +76,6 @@
                         <h3 class="text-xl font-bold mb-2 text-white">Powerful OCR Engine</h3>
                         <p class="text-slate-300">Powered by Tesseract, it accurately extracts text from your images, making even blurry words searchable.</p>
                     </div>
-                    <!-- Feature 2: Instant Search -->
                     <div class="bg-slate-800/50 p-8 rounded-xl shadow-md">
                         <div class="bg-green-900/50 text-green-300 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 17-5-5L9 20l-4-4-3 3"/><path d="M22 3v6h-6"/></svg>
@@ -99,7 +83,6 @@
                         <h3 class="text-xl font-bold mb-2 text-white">Instant Search Results</h3>
                         <p class="text-slate-300">Once your folders are indexed, searching is lightning-fast. Get results in a flash!</p>
                     </div>
-                    <!-- Feature 3: Advanced Filtering -->
                     <div class="bg-slate-800/50 p-8 rounded-xl shadow-md">
                         <div class="bg-purple-900/50 text-purple-300 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
@@ -107,7 +90,6 @@
                         <h3 class="text-xl font-bold mb-2 text-white">Advanced Filtering</h3>
                         <p class="text-slate-300">Narrow your search with filters for exact word matches, file types, and file sizes to pinpoint what you need.</p>
                     </div>
-                    <!-- Feature 4: Light & Dark Mode -->
                     <div class="bg-slate-800/50 p-8 rounded-xl shadow-md">
                         <div class="bg-yellow-900/50 text-yellow-300 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
@@ -120,13 +102,11 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-slate-950 border-t border-slate-800">
         <div class="container mx-auto py-12 px-6 text-center">
             <h3 class="text-2xl font-semibold text-white mb-2">I'd love to hear what you think!</h3>
             <p class="text-slate-300 mb-6">
                 This app was a personal project, and I'm always looking for ways to improve it.
-                <!-- Replace with your actual email -->
                 Please feel free to reach out with any feedback or suggestions! <!-- at <a href="mailto:youremail@example.com" class="text-blue-400 hover:underline">youremail@example.com</a>. -->
             </p>
             <div class="text-sm text-slate-400">
